@@ -1,57 +1,177 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <body>
-      <h1>Daily Newsletter</h1>
-      <nav>
-        <hr>
-        <a href="#" >www.company.com</a>&nbsp &nbsp
-        Hello, subscriber name &nbsp &nbsp
-        
-      </nav>
-      <h3>Featured News</h3>
-      <hr>
-      <p>sed neque ipsum pulviner eutrist ut sangitis ultrices urna<br>um dolar orner eret pede erus</p>
-      <h1>The Big Headline</h1>
-      <img src="pic.png" width="50%">
-      <p>
-          orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-          <a href="">readmore</a>
-        </p>
-        <section style="display: flex;">
-            <article>
-              <h4>Travel news</h4>
-              <hr>
-              <p>
-                  , Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going throu
-                <a href="">reedmore</a>
-                </p>
-            </article>
-            <article>
-              <h4>Travel news</h4>
-              <hr>
-              <p>
-                  , Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going throu
-                <a href="">reedmore</a>
-                </p>
-            </article>
-            <article>
-              <h4>Travel news</h4>
-              <hr>
-              <p>
-                  , Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going throu
-                <a href="">reedmore</a>
-                </p>
-            </article>
-        </section>
-        <footer>
-          <p>
-            Having touble viewing this email?view it in your browzer <br>
-            If you donot reciev any updates,click here to unsubscribe.
-          </p>
-          <img align="right" src=icons.png>
-        </footer>
-     
-    </body>
+    <title>new layout</title>
+    <style>
+      h1,h2,h3,h4,h5,h6{
+        text-align: center;
+      }
+      h1{
+        font-size: 80px;
+      }
+      h2{
+        font-size: 70px;
+      }
+
+      header{
+        background-color: #cac899;
+        border-top: 10px solid #e8e6e6;
+        border-bottom: 10px solid #e8e6e6;
+      }
+      nav{
+        border-top: 10px solid #e8e6e6;
+        background-color: #8d8b59;
+        color: white;
+        padding: 8px;
+      }
+      nav a {
+        color: white;
+      }
+
+      nav * {
+        width: 30.96%;
+        display: inline-block;
+      }
+      nav .last{
+        text-align: right;
+      }
+      nav .mid{
+        text-align: center;
+      }
+      
+      h3,h4{
+        border-bottom: 1px solid black;
+        width: 40%;
+        margin: auto;
+      }
+
+      h4{
+        width: 80%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      #container{
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      #article-img{
+        width: 100%;
+      }
+      #news-categories{
+        display: flex;
+        background-color:#cac899;
+        box-shadow: 0 0px 16px -1px rgba(0, 0, 0);
+      }
+
+      #news-categories article{
+        padding: 10px;
+        text-align: center;
+      }
+      #news-categories article:nth-child(2){
+        border-left: 2px solid;
+        border-right: 2px solid;
+      }
+      #news-categories article a{
+        background-color:black;
+        color:white;
+        padding: 1px;
+        margin: 2px;
+        display: inline-block;
+      }
+      footer{
+        margin-top: 10px;
+      }
+      footer .left{
+        float: left;
+        width: 70%
+      }
+      
+      footer .right{
+        float: right;
+        width: 30%;
+      }
+
+      footer img{
+        margin-top: 20px;
+        width: 30px;
+        float: right;
+      }
+    </style>
   </head>
+  <body>
+    <div id="container">
+    <header>
+      <h1>Daily Newspaper</h1>
+      <nav>
+        <a href="www.company.com">www.company.com</a>
+        <span class="mid">Hello, subscriber name.</span>
+        <span class="last">Friday, 9 September 2011</span>
+      </nav>
+    </header>
+    <article>
+      <h3>FEATURED NEWS</h3>
+      
+      <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a typ</p>
+    </article>
+    <article>
+      <h2>The Big Headline</h2>
+      <img id="article-img" src="new_pic.png" alt="">
+      <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+         Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia,
+          looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and
+           going through the cites of the word in classical 
+           literature, discovered the undoubtable source. 
+           Lorem Ipsum comes from sections 1.10.32 and 1.10.33 
+           of "de Finibus Bonorum et Malorum" (The Extremes of 
+           Good and Evil) by Cicero, written in 45 BC. 
+           This book is a treatise on the theory of ethics, 
+           very popular during the Renaissance. The first line
+            of Lorem Ipsum, "Lorem ipsum dolor sit amet..", 
+            comes from a line in section 1.10.32.
+          <a href="https://www.lipsum.com/">readmore</a>
+          </p>
+    </article>
+    <section id="news-categories">
+      <article>
+        <h4>Lifestyle News</h4>
+        <p>word in classical literature, discovered the 
+          undoubtable source. Lorem Ipsum comes from
+           sections 1.10.32 and 1.10.33 of "de Finibus 
+           Bonorum et Malorum" (The Extremes of Google.
+          <a href="https://www.lipsum.com/">readmore</a>
+          
+      </article>
+      <article>
+          <h4>Finance News</h4>
+          <p>word in classical literature, discovered the 
+            undoubtable source. Lorem Ipsum comes from
+             sections 1.10.32 and 1.10.33 of "de Finibus 
+             Bonorum et Malorum" (The Extremes of Google.
+            <a href="https://www.lipsum.com/">readmore</a>
+            
+        </article>
+        <article>
+            <h4>Travel News</h4>
+            <p>word in classical literature, discovered the 
+              undoubtable source. Lorem Ipsum comes from
+               sections 1.10.32 and 1.10.33 of "de Finibus 
+               Bonorum et Malorum" (The Extremes of Google.
+              <a href="https://www.lipsum.com/">readmore</a>  
+          </article>
+    </section>
+    <footer>
+      <div class="left">
+        <p>Having trouble viewing this email?View it in your browser <br>
+        If you donot wish to recive any updates,click here to unsubscribe</p>
+      </div>
+      <div class="right">
+        <img src="pic5.png" alt="">
+        <img src="pic4.png" alt=""> 
+        <img src="pic3.png" alt="">
+        <img src="pic2.png" alt="">
+        <img src="pic1.png" alt="">
+      </div>
+    </footer>
+  </body>
 </html>
